@@ -31,3 +31,7 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+set tw=120 ts=4 sw=4 et
+set tags=./.tags;tags
+colorscheme coda
